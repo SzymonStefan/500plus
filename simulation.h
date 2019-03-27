@@ -3,9 +3,11 @@
 //void nextGeneration(GridContainer* grid, StatisticsContainer* stats);
 typedef struct {
     char* name;
-    int saveEvery;
+    char* file;
     int steps;
-} simulation_t;
+    int saveEvery;
+    int stats;
+} options_t;
 
-
+options_t* createOptions();
 #endif // SIMULATION_H_INCLUDED

@@ -6,6 +6,7 @@ typedef struct {
     int sizeY;
 } grid_t;
 
+// Wypisuje siatkê komórek na stdout
 void printGrid(grid_t*);
 
 #endif // GRIDCONTAINER_H_INCLUDED

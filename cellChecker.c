@@ -3,7 +3,7 @@
 // Sprawdza przyszy stan komorki x,y (1 = zywa, 0 = martwa)
 int checkState(int x, int y, grid_t* grid)
 {
-    // Liczenie sasiadow srodkowej komorki
+    // Liczenie wszystkich zywych komorek w sasiedztwie Moore'a
     int alive = 0;
     for(int i = -1; i < 2; i++)
         for(int j = -1; j < 2; j++) {
