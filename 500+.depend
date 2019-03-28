@@ -1,0 +1,41 @@
+# depslib dependency file v1.0
+1553723661 source:c:\users\szymon\documents\c\500+\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	"simulation.h"
+	"fileReader.h"
+
+1553723172 source:c:\users\szymon\documents\c\500+\simulation.c
+	"simulation.h"
+
+1553722975 c:\users\szymon\documents\c\500+\simulation.h
+
+1553723480 source:c:\users\szymon\documents\c\500+\gridcontainer.c
+	<stdio.h>
+	"gridContainer.h"
+
+1553624539 source:c:\users\szymon\documents\c\500+\gridcontainer.h
+
+1553624591 source:c:\users\szymon\documents\c\500+\simulation.h
+
+1553714103 c:\users\szymon\documents\c\500+\gridcontainer.h
+
+1553624694 source:c:\users\szymon\documents\c\500+\filereader.h
+
+1553723385 source:c:\users\szymon\documents\c\500+\filereader.c
+	<stdio.h>
+	<stdlib.h>
+	"fileReader.h"
+	"gridContainer.h"
+
+1553715341 c:\users\szymon\documents\c\500+\filereader.h
+	"gridContainer.h"
+
+1553716005 source:c:\users\szymon\documents\c\500+\cellchecker.c
+	"cellChecker.h"
+
+1553673883 c:\users\szymon\documents\c\500+\cellchecker.h
+	"gridContainer.h"
+
