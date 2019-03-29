@@ -1,12 +1,14 @@
 #ifndef GRIDCONTAINER_H_INCLUDED
 #define GRIDCONTAINER_H_INCLUDED
+
 typedef struct {
     char** grid;
+    char** tmp;
     int sizeX;
     int sizeY;
 } grid_t;
 
-// Wypisuje siatkê komórek na stdout
+// Wypisuje siatkÃª komÃ³rek na stdout
 void printGrid(grid_t*);
 
 #endif // GRIDCONTAINER_H_INCLUDED

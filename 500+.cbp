@@ -32,6 +32,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="StatisticsContainer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="StatisticsContainer.h" />
 		<Unit filename="cellChecker.c">
 			<Option compilerVar="CC" />
 		</Unit>

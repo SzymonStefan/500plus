@@ -70,6 +70,7 @@ int main(int argc , char** argv)
 
     grid_t *grid = createGrid(options->file);
 
+
     printf("Wczytana siatka:\n");
     printGrid(grid);
     //printf("%d\n", checkState(1,2,grid));

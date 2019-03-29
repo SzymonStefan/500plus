@@ -39,3 +39,46 @@
 1553673883 c:\users\szymon\documents\c\500+\cellchecker.h
 	"gridContainer.h"
 
+1553857254 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\cellchecker.c
+	"cellChecker.h"
+
+1553857292 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\cellchecker.h
+	"gridContainer.h"
+	"StatisticsContainer.h"
+
+1553855915 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\gridcontainer.h
+
+1553855706 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filereader.c
+	<stdio.h>
+	<stdlib.h>
+	"fileReader.h"
+	"gridContainer.h"
+
+1553769771 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filereader.h
+	"gridContainer.h"
+
+1553769771 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\gridcontainer.c
+	<stdio.h>
+	"gridContainer.h"
+
+1553855643 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	"simulation.h"
+	"fileReader.h"
+
+1553857084 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\simulation.h
+	"StatisticsContainer.h"
+	"gridContainer.h"
+
+1553769771 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\simulation.c
+	"simulation.h"
+
+1553855643 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.c
+	<stdio.h>
+	"StatisticsContainer.h"
+
+1553857084 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.h
+

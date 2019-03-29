@@ -1,6 +1,10 @@
 #ifndef SIMULATION_H_INCLUDED
 #define SIMULATION_H_INCLUDED
-//void nextGeneration(GridContainer* grid, StatisticsContainer* stats);
+#include "StatisticsContainer.h"
+#include "gridContainer.h"
+
+void nextGeneration(grid_t* grid, stats_t* stats);
+
 typedef struct {
     char* name;
     char* file;
