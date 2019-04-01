@@ -2,7 +2,7 @@
 #define GRIDCONTAINER_H_INCLUDED
 
 typedef struct {
-    char** grid;
+    char** grid; // grid[y][x]
     char** tmp;
     int sizeX;
     int sizeY;

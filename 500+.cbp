@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-file g1.txt -save-every 1 -stats -name Test" />
+				<Option parameters="-file data/krokodyl.txt -save-every 1 -steps 20 -stats -name Test" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>

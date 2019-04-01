@@ -15,7 +15,7 @@ grid_t* createGrid(char* path)
     // Utworzenie struktury grid_t i alokacja pamieci
     grid_t* grid = (grid_t*) malloc(sizeof(grid_t));
     if(grid == NULL)
-        printf("Blad alokacji pamieci na strukturê grid_t!\n");
+        printf("Blad alokacji pamieci na strukture grid_t!\n");
 
     // Wczytanie wymiarow siatki (sizeX, sizeY)
     grid->sizeX = 0;
@@ -30,7 +30,7 @@ grid_t* createGrid(char* path)
 
     // Alokacja pamieci na tablice komorek (grid_t->grid)
     grid->grid = (char**)malloc(sizeof(char*) * grid->sizeX);
-    for(int i = 0; i < grid->sizeY; i++)
+    for(int i = 0; i < grid->sizeX; i++)
         grid->grid[i] = (char*)malloc(sizeof(char) * grid->sizeY);
 
     // Wczytanie siatki komorek
@@ -53,11 +53,10 @@ grid_t* createGrid(char* path)
         printf("\nPoprawnie wczytano stany %d komorek. :)\n", grid->sizeX * grid->sizeY);
     }
 
-    //Stworzenie tymczasowej tablicy
-    char** tmp = (char**)malloc(sizeof(char*)* grid->sizeX);
-    for(int i=0; i<grid->sizeY; i++)
-        tmp[i] = (char)malloc(sizeof(char)* grid->sizeY);
-    grid->tmp = tmp;
+    //Stworzenie drugiej tablicy, uzywanej do liczenia sasiadow
+    grid->tmp = (char**)malloc(sizeof(char*) * grid->sizeX);
+    for(int i = 0; i < grid->sizeX; i++)
+        grid->tmp[i] = (char*)malloc(sizeof(char) * grid->sizeY);
 
 
 

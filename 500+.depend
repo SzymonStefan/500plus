@@ -82,3 +82,49 @@
 
 1553857084 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.h
 
+1554133997 source:c:\users\szymon\documents\c\git500+\cellchecker.c
+	"cellChecker.h"
+
+1554134409 c:\users\szymon\documents\c\git500+\cellchecker.h
+	"gridContainer.h"
+	"StatisticsContainer.h"
+
+1554133657 c:\users\szymon\documents\c\git500+\gridcontainer.h
+
+1554131216 c:\users\szymon\documents\c\git500+\statisticscontainer.h
+
+1554135931 source:c:\users\szymon\documents\c\git500+\filereader.c
+	<stdio.h>
+	<stdlib.h>
+	"fileReader.h"
+	"gridContainer.h"
+
+1554133387 c:\users\szymon\documents\c\git500+\filereader.h
+	"gridContainer.h"
+
+1554133869 source:c:\users\szymon\documents\c\git500+\gridcontainer.c
+	<stdio.h>
+	"gridContainer.h"
+
+1554134261 source:c:\users\szymon\documents\c\git500+\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	"simulation.h"
+	"fileReader.h"
+
+1554130710 c:\users\szymon\documents\c\git500+\simulation.h
+	"StatisticsContainer.h"
+	"gridContainer.h"
+
+1554134481 source:c:\users\szymon\documents\c\git500+\simulation.c
+	<stdlib.h>
+	<stdio.h>
+	"simulation.h"
+	"StatisticsContainer.h"
+
+1554131216 source:c:\users\szymon\documents\c\git500+\statisticscontainer.c
+	<stdio.h>
+	"StatisticsContainer.h"
+

@@ -9,6 +9,7 @@ typedef struct {
 // Wypisuje statystyki
 void printStats(stats_t*);
 
+stats_t* createStats();
 #endif // STATISTICSCONTAINER_H_INSCLUDED
 
 

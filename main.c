@@ -69,11 +69,12 @@ int main(int argc , char** argv)
     printf("-----------------------------------------------------------\n");
 
     grid_t *grid = createGrid(options->file);
+    stats_t* stats = createStats();
+
+    //printNeighbours(grid);
 
 
-    printf("Wczytana siatka:\n");
-    printGrid(grid);
-    //printf("%d\n", checkState(1,2,grid));
+    simulator(grid, stats, options);
 
     return 0;
 }
