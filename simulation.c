@@ -19,10 +19,8 @@ options_t* createOptions()
 }
 
 void nextGeneration(grid_t* grid, stats_t* stats){
-    //printf("xD");
     for(int i = 0; i <grid->sizeY; i++)
         for(int j = 0; j < grid->sizeX; j++) {
-            //printf("i=%d, j=%d\n", i, j);
             grid->tmp[i][j] = checkState(j, i, grid, stats);
         }
 
@@ -32,10 +30,12 @@ void nextGeneration(grid_t* grid, stats_t* stats){
 }
 
 void simulator(grid_t* grid, stats_t* stats, options_t* options){
-    for(int i=0; i< options->steps; i++) {
-        printf("Generacja %d\n", i);
+    for(int i = 0; i < options->steps; i++) {
+        printf("Generacja %d\n", i + 1);
         printGrid(grid);
         nextGeneration(grid, stats);
+        if(stats != NULL)
+            stats->numOfGenerations++;
         //if(i % options->saveEvery == 0)
             //createPNG();
     }

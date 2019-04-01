@@ -1,5 +1,5 @@
 #include "cellChecker.h"
-
+#include <stdio.h>
 // Sprawdza przyszy stan komorki x,y (1 = zywa, 0 = martwa)
 char checkState(int x, int y, grid_t* grid, stats_t* stats)
 {
@@ -13,12 +13,22 @@ char checkState(int x, int y, grid_t* grid, stats_t* stats)
 
 
     // Zwrocenie przyszlego stanu komorki
+    char state;
+
     if(alive == 3)
-        return '1';
+        state = '1';
     else if(alive == 4)
-        return grid->grid[y][x];
+        state = grid->grid[y][x];
     else
-        return '0';
+        state = '0';
+
+    if(stats != NULL && state != grid->grid[y][x]) {
+        if(state == '1')
+            stats->totalCreations++;
+        else
+            stats->totalDeaths++;
+    }
+    return state;
 }
 
 

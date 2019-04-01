@@ -66,15 +66,21 @@ int main(int argc , char** argv)
     printf(" steps: %d\n", options->steps);
     printf(" save-every: %d\n", options->saveEvery);
     printf(" stats: %d\n", options->stats);
-    printf("-----------------------------------------------------------\n");
+    printf("\n");
 
     grid_t *grid = createGrid(options->file);
-    stats_t* stats = createStats();
+
+    stats_t* stats;
+    if(options->stats == 1)
+        stats = createStats();
+    else
+        stats = NULL;
 
     //printNeighbours(grid);
 
 
     simulator(grid, stats, options);
-
+    if(options->stats == 1)
+        saveStats(stats, options);
     return 0;
 }

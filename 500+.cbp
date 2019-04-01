@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="-file data/krokodyl.txt -save-every 1 -steps 20 -stats -name Test" />
+				<Option parameters="-file data/krokodyl.txt -save-every 1 -steps 20 -name Test -stats" />
 				<Compiler>
 					<Add option="-g" />
 				</Compiler>
@@ -32,14 +32,14 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="StatisticsContainer.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="StatisticsContainer.h" />
 		<Unit filename="cellChecker.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="cellChecker.h" />
+		<Unit filename="fileMaker.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fileMaker.h" />
 		<Unit filename="fileReader.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -55,6 +55,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="simulation.h" />
+		<Unit filename="statisticsContainer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="statisticsContainer.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
