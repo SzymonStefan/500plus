@@ -6,10 +6,9 @@ typedef struct {
     int numOfGenerations;
 } stats_t;
 
-// Wypisuje statystyki
-void printStats(stats_t*);
-
 stats_t* createStats();
+
+void freeStats(stats_t*);
 #endif // STATISTICSCONTAINER_H_INSCLUDED
 
 

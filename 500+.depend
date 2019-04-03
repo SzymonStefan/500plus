@@ -86,32 +86,34 @@
 
 1554282551 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.h
 
-1554138275 source:c:\users\szymon\documents\c\git500+\cellchecker.c
+1554324410 source:c:\users\szymon\documents\c\git500+\cellchecker.c
 	"cellChecker.h"
 	<stdio.h>
+	<stdlib.h>
 
-1554134409 c:\users\szymon\documents\c\git500+\cellchecker.h
+1554324222 c:\users\szymon\documents\c\git500+\cellchecker.h
 	"gridContainer.h"
 	"StatisticsContainer.h"
 
-1554137049 c:\users\szymon\documents\c\git500+\gridcontainer.h
+1554322524 c:\users\szymon\documents\c\git500+\gridcontainer.h
 
-1554131216 c:\users\szymon\documents\c\git500+\statisticscontainer.h
+1554322332 c:\users\szymon\documents\c\git500+\statisticscontainer.h
 
-1554135931 source:c:\users\szymon\documents\c\git500+\filereader.c
+1554321637 source:c:\users\szymon\documents\c\git500+\filereader.c
 	<stdio.h>
 	<stdlib.h>
 	"fileReader.h"
 	"gridContainer.h"
 
-1554133387 c:\users\szymon\documents\c\git500+\filereader.h
+1554320750 c:\users\szymon\documents\c\git500+\filereader.h
 	"gridContainer.h"
 
-1554133869 source:c:\users\szymon\documents\c\git500+\gridcontainer.c
+1554324177 source:c:\users\szymon\documents\c\git500+\gridcontainer.c
 	<stdio.h>
+	<stdlib.h>
 	"gridContainer.h"
 
-1554137953 source:c:\users\szymon\documents\c\git500+\main.c
+1554324187 source:c:\users\szymon\documents\c\git500+\main.c
 	<stdio.h>
 	<stdlib.h>
 	<getopt.h>
@@ -119,21 +121,21 @@
 	"simulation.h"
 	"fileReader.h"
 
-1554130710 c:\users\szymon\documents\c\git500+\simulation.h
+1554323044 c:\users\szymon\documents\c\git500+\simulation.h
 	"StatisticsContainer.h"
 	"gridContainer.h"
 
-1554138676 source:c:\users\szymon\documents\c\git500+\simulation.c
+1554323115 source:c:\users\szymon\documents\c\git500+\simulation.c
 	<stdlib.h>
 	<stdio.h>
 	"simulation.h"
 	"StatisticsContainer.h"
 
-1554131216 source:c:\users\szymon\documents\c\git500+\statisticscontainer.c
+1554322377 source:c:\users\szymon\documents\c\git500+\statisticscontainer.c
 	<stdio.h>
 	"StatisticsContainer.h"
 
-1554138451 source:c:\users\szymon\documents\c\git500+\filemaker.c
+1554322139 source:c:\users\szymon\documents\c\git500+\filemaker.c
 	<stdio.h>
 	"statisticsContainer.h"
 	"simulation.h"

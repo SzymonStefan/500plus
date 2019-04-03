@@ -2,7 +2,7 @@
 #include "statisticsContainer.h"
 #include "simulation.h"
 
-// zapisuje statystyki do pliku
+// Zapisuje statystyki do pliku
 void saveStats(stats_t* stats, options_t* options) {
     FILE *out = fopen("stats.txt", "w");
     if(out == NULL)

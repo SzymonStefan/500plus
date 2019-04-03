@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "gridContainer.h"
 
 /*DEBUG*/ #include "cellChecker.h"
 
-// Wypisuje siatkê komórek na stdout
+// Wypisuje siatke komórek na stdout
 void printGrid(grid_t *grid)
 {
     for(int i = 0; i < grid->sizeY; i++) {
@@ -14,7 +15,8 @@ void printGrid(grid_t *grid)
     printf("\n");
 }
 
-/*DEBUG*/ void printNeighbours(grid_t* grid, stats_t* stats) {
+// Funkcja testowa! Wypisuje liczbe sasiadow wszystkich komorek w tablicy
+void printNeighbours(grid_t* grid, stats_t* stats) {
     printf("======SASIEDZI======\n");
     for(int i = 0; i < grid->sizeY; i++) {
         for(int j = 0; j < grid->sizeX; j++)
@@ -23,3 +25,15 @@ void printGrid(grid_t *grid)
     }
     printf("\n");
 }
+
+// Zwalnia pamiec po strukturze grid_t
+/*void freeGrid(grid_t* grid) {
+    for(int i = 0; i < grid->sizeX; i++)
+        free(grid->tmp[i]);
+    free(grid->tmp);
+
+    for(int i = 0; i < grid->sizeX; i++)
+        free(grid->grid[i]);
+    free(grid->grid);
+
+}*/

@@ -14,4 +14,6 @@ typedef struct {
 } options_t;
 
 options_t* createOptions();
+
+void freeOptions(options_t*);
 #endif // SIMULATION_H_INCLUDED

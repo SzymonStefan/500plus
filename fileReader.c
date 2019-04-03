@@ -3,6 +3,9 @@
 #include "fileReader.h"
 #include "gridContainer.h"
 
+#define ALIVE '1'
+#define DEAD '0'
+
 grid_t* createGrid(char* path)
 {
     // Otwarcie pliku z danymi
@@ -38,7 +41,7 @@ grid_t* createGrid(char* path)
     for(int i = 0; i < grid->sizeY; i++)
         for(int j = 0; j < grid->sizeX; j++) {
             fscanf(in, "%s", &grid->grid[i][j]);
-            if(grid->grid[i][j] != '1' && grid->grid[i][j] != '0') {
+            if(grid->grid[i][j] != ALIVE && grid->grid[i][j] != DEAD) {
                 printf("Bledna wartosc komorki na pozycji (%d,%d), rowna \"%c\". Przyjmowane wartosci to 0 lub 1.\n", i, j, grid->grid[i][j]);
                 errors++;
             }
