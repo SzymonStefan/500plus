@@ -26,19 +26,51 @@ int main(int argc , char** argv)
     };
 
     // Petla odczytujaca wszystkie argumenty przy pomocy getopt
+    char flag;
     while ((opt = getopt_long_only(argc, argv, ":", longOptions, &index)) != -1) {
         switch (opt) {
         case 0: // name
             options->name = optarg;
+            flag = '*';
+            for(int i=0; options->name[i] != '\0'; i++){
+                if( ! (isalnum(options->name[i]) || options->name[i] == '_' || options->name[i] == '/' ||  options->name[i] == '.') ){
+                    flag = options->name[i];
+                    break;
+                }
+            }
+            if(flag != '*'){
+                printf("Podano nieodpowiedni znak przy argumencie name \"%c\"\n",flag);
+                exit(1);
+            }
+
             break;
         case 1: // file
             options->file = optarg;
+            flag = '*';
+            for(int i=0; options->file[i] != '\0'; i++){
+                if( ! (isalnum(options->file[i]) || options->file[i] == '_' || options->file[i] == '/' || options->file[i] == '.') ){
+                    flag = options->file[i];
+                    break;
+                }
+            }
+            if(flag != '*'){
+                printf("Podano nieodpowiedni znak przy wczytaniu pliku\n");
+                exit(1);
+            }
             break;
         case 2: // steps
             options->steps = atoi(optarg);
+            if(options->steps <= 0){
+                printf("Podano nieodpowiedni argument przy steps");
+                exit(1);
+            }
             break;
         case 3: // save-every
             options->saveEvery = atoi(optarg);
+            if(options->saveEvery <= 0){
+                printf("Podano nieodpowiedni argument przy saveEvery");
+                exit(1);
+            }
             break;
         case 4: // stats
             options->stats = 1;

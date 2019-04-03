@@ -1,4 +1,4 @@
-Statystyki dzialania symulacji o nazwie "Test"
+Statystyki dzialania symulacji o nazwie "Tests"
 ===================================================================
 Liczba generacji: 20
 Calkowita liczba "narodzin" komorek: 242
