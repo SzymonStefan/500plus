@@ -36,11 +36,20 @@ void simulator(grid_t* grid, stats_t* stats, options_t* options){
     for(int i = 0; i < options->steps; i++) {
         printf("Generacja %d\n", i + 1);
         printGrid(grid);
+        if(i % options->saveEvery == 0) {
+            char name[80];
+            strcpy(name, options->name);
+            char number[10];
+            sprintf(number, "%d", i+1);
+            strcat(name, number);
+            strcat(name, ".png");
+            savePNG(grid, name);
+        }
+
         nextGeneration(grid, stats);
         if(stats != NULL)
             stats->numOfGenerations++;
-        //if(i % options->saveEvery == 0)
-            //createPNG();
+
     }
 }
 

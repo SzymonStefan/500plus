@@ -5,12 +5,27 @@
 
 #include "simulation.h"
 #include "fileReader.h"
-//#include "fileMaker.h"
-
+#include "fileMaker.h"
+#include "lodepng.h"
 
 
 int main(int argc , char** argv)
 {
+
+
+/*
+    unsigned char* test = malloc(sizeof(char) * 4);
+    //for(int i = 0; i < 16; i++)
+        //test[i] = 10*i;
+    test[0] = 0;
+    test[1] = 0;
+    test[2] = 0;
+    test[3] = 255;
+    lodepng_encode32_file("TEST.png", test, 1, 1);
+
+    free(test);
+*/
+
     // Stworzenie struktury przechowujacej opcje programu
     options_t* options = createOptions();
 
@@ -123,7 +138,8 @@ int main(int argc , char** argv)
         saveStats(stats, options);
         freeStats(stats);
     }
+
     //freeGrid(grid);
-    freeOptions(options);
+    //freeOptions(options);
     return 0;
 }
