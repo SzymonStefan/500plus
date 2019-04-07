@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "statisticsContainer.h"
+#include "StatisticsContainer.h"
 #include "simulation.h"
 #include "lodepng.h"
 
@@ -12,8 +12,8 @@ void saveStats(stats_t* stats, options_t* options) {
     fprintf(out, "Statystyki dzialania symulacji o nazwie \"%s\"\n", options->name);
     fprintf(out, "===================================================================\n");
     fprintf(out, "Liczba generacji: %d\n", stats->numOfGenerations);
-    fprintf(out, "Calkowita liczba \"narodzin\" komorek: %d\n", stats->totalCreations);
-    fprintf(out, "Calkowita liczba \"smierci\" komorek: %d\n", stats->totalDeaths);
+    fprintf(out, "Calkowita liczba \"narodzin\" komorek: %ld\n", stats->totalCreations);
+    fprintf(out, "Calkowita liczba \"smierci\" komorek: %ld\n", stats->totalDeaths);
 
     fclose(out);
 }
@@ -26,7 +26,6 @@ void savePNG(grid_t* grid, char* fileName) {
     unsigned char* image = malloc(sizeof(char) * grid->sizeX * grid->sizeY * 4 * scale);
     int i = 0;
 
-    printf("KOLORY\n");
     for(int y = 0; y < grid->sizeY; y++) {
         for(int x = 0; x < grid->sizeX; x++) {
             if(grid->grid[y][x] == '1') {

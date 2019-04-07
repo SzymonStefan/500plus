@@ -1,1 +1,77 @@
 # depslib dependency file v1.0
+1554582790 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\cellchecker.c
+	"cellChecker.h"
+	<stdio.h>
+	<stdlib.h>
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\cellchecker.h
+	"gridContainer.h"
+	"StatisticsContainer.h"
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\gridcontainer.h
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.h
+
+1554649423 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filemaker.c
+	<stdio.h>
+	<stdlib.h>
+	"StatisticsContainer.h"
+	"simulation.h"
+	"lodepng.h"
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\simulation.h
+	"StatisticsContainer.h"
+	"gridContainer.h"
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1554582790 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filereader.c
+	<stdio.h>
+	<stdlib.h>
+	"fileReader.h"
+	"gridContainer.h"
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filereader.h
+	"gridContainer.h"
+
+1554582790 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\gridcontainer.c
+	<stdio.h>
+	<stdlib.h>
+	"gridContainer.h"
+
+1554582790 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\lodepng.c
+	"lodepng.h"
+	<limits.h>
+	<stdio.h>
+	<stdlib.h>
+
+1554584714 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\main.c
+	<stdio.h>
+	<stdlib.h>
+	<getopt.h>
+	<string.h>
+	"simulation.h"
+	"fileReader.h"
+	"fileMaker.h"
+	"lodepng.h"
+
+1554582790 c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\filemaker.h
+
+1554648953 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\simulation.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"simulation.h"
+	"StatisticsContainer.h"
+
+1554588736 source:c:\users\szymuœ\desktop\programowanie\projekty\aagit\500plus\statisticscontainer.c
+	<stdlib.h>
+	<stdio.h>
+	"StatisticsContainer.h"
+
