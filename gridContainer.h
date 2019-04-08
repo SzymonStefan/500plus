@@ -8,7 +8,6 @@ typedef struct {
     int sizeY;
 } grid_t;
 
-// Wypisuje siatke komorek na stdout
 void printGrid(grid_t*);
 
 void freeGrid(grid_t*);

@@ -22,11 +22,13 @@ options_t* createOptions()
 
 // Przeprowadza jedna generacje symulacji
 void nextGeneration(grid_t* grid, stats_t* stats){
+    // Sprawdzenie przyszlych stanow kazdej komorki tablicy grid
     for(int i = 0; i <grid->sizeY; i++)
         for(int j = 0; j < grid->sizeX; j++) {
             grid->tmp[i][j] = checkState(j, i, grid, stats);
         }
 
+    // Zamiana wskaznikow grid i tmp
     char** buf = grid->grid;
     grid->grid = grid->tmp;
     grid->tmp = buf;
@@ -38,15 +40,18 @@ void simulator(grid_t* grid, stats_t* stats, options_t* options){
         printf("Generacja %d\n", i + 1);
         printGrid(grid);
         if(i % options->saveEvery == 0) {
-            char name[80];
+            // Stworzenie odpowiedniej nazwy pliku PNG
+            char name[128];
             strcpy(name, options->name);
-            char number[10];
+            char number[16];
             sprintf(number, "%d", i+1);
             strcat(name, number);
             strcat(name, ".png");
+
+            // Zapisanie pliku PNG
             savePNG(grid, name);
         }
-
+        // Nastepna generacja symulacji
         nextGeneration(grid, stats);
         if(stats != NULL)
             stats->numOfGenerations++;

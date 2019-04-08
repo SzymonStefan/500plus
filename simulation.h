@@ -3,7 +3,7 @@
 #include "StatisticsContainer.h"
 #include "gridContainer.h"
 
-void nextGeneration(grid_t* grid, stats_t* stats);
+void nextGeneration(grid_t*, stats_t*);
 
 typedef struct {
     char* name;

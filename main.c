@@ -9,23 +9,7 @@
 #include "lodepng.h"
 
 
-int main(int argc , char** argv)
-{
-
-
-/*
-    unsigned char* test = malloc(sizeof(char) * 4);
-    //for(int i = 0; i < 16; i++)
-        //test[i] = 10*i;
-    test[0] = 0;
-    test[1] = 0;
-    test[2] = 0;
-    test[3] = 255;
-    lodepng_encode32_file("TEST.png", test, 1, 1);
-
-    free(test);
-*/
-
+int main(int argc , char** argv) {
     // Stworzenie struktury przechowujacej opcje programu
     options_t* options = createOptions();
 
@@ -103,6 +87,7 @@ int main(int argc , char** argv)
             break;
         }
     }
+
     // Jesli brak argumentu -file, program konczy dzialanie
     if(options->file == "") {
         printf("Blad, nie podano pliku z danymi! Prosze uzyc argumentu -file plik.\n");
@@ -140,6 +125,7 @@ int main(int argc , char** argv)
     }
 
     //freeGrid(grid);
-    //freeOptions(options);
+    // Zwolnienie pamieci
+    freeOptions(options);
     return 0;
 }

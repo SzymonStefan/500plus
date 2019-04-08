@@ -6,8 +6,7 @@
 #define DEAD '0'
 
 // Zwraca przyszy stan komorki x,y (1 = zywa, 0 = martwa)
-char checkState(int x, int y, grid_t* grid, stats_t* stats)
-{
+char checkState(int x, int y, grid_t* grid, stats_t* stats) {
     // Liczenie wszystkich zywych komorek w sasiedztwie Moore'a
     int alive = 0;
     for(int i = -1; i < 2; i++)
@@ -16,7 +15,7 @@ char checkState(int x, int y, grid_t* grid, stats_t* stats)
                 alive++;
         }
 
-    // Zwrocenie przyszlego stanu komorki
+    // Ustawienie przyszlego stanu komorki do zwrocenia
     char state;
     if(alive == 3)
         state = ALIVE;

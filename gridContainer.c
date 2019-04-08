@@ -1,12 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "gridContainer.h"
-
-/*DEBUG*/ #include "cellChecker.h"
+#include "cellChecker.h"
 
 // Wypisuje siatke komórek na stdout
-void printGrid(grid_t *grid)
-{
+void printGrid(grid_t *grid) {
     for(int i = 0; i < grid->sizeY; i++) {
         for(int j = 0; j < grid->sizeX; j++)
             printf(" %c", grid->grid[i][j]);
@@ -36,4 +34,6 @@ void printNeighbours(grid_t* grid, stats_t* stats) {
         free(grid->grid[i]);
     free(grid->grid);
 
+    free(grid);
 }*/
+

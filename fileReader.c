@@ -8,7 +8,7 @@
 
 grid_t* createGrid(char* path)
 {
-    // Otwarcie pliku z danymi
+    // Otworzenie pliku z danymi
     FILE *in = fopen(path, "r");
     if(in == NULL) {
         printf("Nie udalo sie otworzyc pliku %s!\n", path);
@@ -52,16 +52,13 @@ grid_t* createGrid(char* path)
         printf("\nLiczba bledow znalezionych w pliku: %d. Program konczy dzialanie.\n", errors);
         exit(1);
     }
-    else {
+    else
         printf("\nPoprawnie wczytano stany %d komorek. :)\n", grid->sizeX * grid->sizeY);
-    }
 
-    //Stworzenie drugiej tablicy, uzywanej do liczenia sasiadow
+    //Stworzenie drugiej tablicy uzywanej do liczenia sasiadow
     grid->tmp = (char**)malloc(sizeof(char*) * grid->sizeX);
     for(int i = 0; i < grid->sizeX; i++)
         grid->tmp[i] = (char*)malloc(sizeof(char) * grid->sizeY);
-
-
 
     fclose(in);
     return grid;

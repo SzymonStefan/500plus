@@ -19,41 +19,28 @@ void saveStats(stats_t* stats, options_t* options) {
 }
 
 void savePNG(grid_t* grid, char* fileName) {
-    int scale = 4;
+    // stworzenie tablicy przechowujacej kolory pikseli do zapisania
+    unsigned char* image = malloc(sizeof(char) * grid->sizeX * grid->sizeY * 4);
 
-
-
-    unsigned char* image = malloc(sizeof(char) * grid->sizeX * grid->sizeY * 4 * scale);
+    // Przepisanie tablicy grid na format wymagany przez funkcje z biblioteki lodepng
     int i = 0;
-
     for(int y = 0; y < grid->sizeY; y++) {
         for(int x = 0; x < grid->sizeX; x++) {
             if(grid->grid[y][x] == '1') {
-                for(int j = 0; j < scale; j++) {
-                    for(int k = 0; k < scale; k++) {
-                        image[i] = 0;
-                        image[i+1] = 0;
-                        image[i+2] = 0;
-                        image[i+3] = 255;
-                        //printf(" 1");
-                    }
-                    i+=4;
-                }
+                for(int n = 0; n < 3; n++) // czarny
+                    image[i++] = 0;
+                image[i++] = 255;
             }
-            else {
-                for(int j = 0; j < scale; j++) {
+            else
+                for(int n = 0; n < 4; n++) // bialy
                     image[i++] = 255;
-                    image[i++] = 255;
-                    image[i++] = 255;
-                    image[i++] = 255;
-                    //printf(" 0");
-                }
-            }
         }
-        //printf("\n");
     }
-    //printf("=============================\n");
 
-    lodepng_encode32_file(fileName, image, grid->sizeX*scale, grid->sizeY);
+    // Zapisanie pliku PNG przy uzyciu funkcji biblioteki lodepng
+    lodepng_encode32_file(fileName, image, grid->sizeX, grid->sizeY);
+
+    // Zwolnienie pamieci
     free(image);
 }
+
