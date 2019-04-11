@@ -1,5 +1,5 @@
 Statystyki dzialania symulacji o nazwie "Tests"
 ===================================================================
-Liczba generacji: 20
-Calkowita liczba "narodzin" komorek: 40
-Calkowita liczba "smierci" komorek: 40
+Liczba generacji: 15
+Calkowita liczba "narodzin" komorek: 168
+Calkowita liczba "smierci" komorek: 168

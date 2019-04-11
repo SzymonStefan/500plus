@@ -38,9 +38,11 @@ grid_t* createGrid(char* path)
 
     // Wczytanie siatki komorek
     int errors = 0;
+    int num = 0;
     for(int i = 0; i < grid->sizeY; i++)
         for(int j = 0; j < grid->sizeX; j++) {
             fscanf(in, "%s", &grid->grid[i][j]);
+            num++;
             if(grid->grid[i][j] != ALIVE && grid->grid[i][j] != DEAD) {
                 printf("Bledna wartosc komorki na pozycji (%d,%d), rowna \"%c\". Przyjmowane wartosci to 0 lub 1.\n", i, j, grid->grid[i][j]);
                 errors++;
@@ -50,6 +52,10 @@ grid_t* createGrid(char* path)
     // Wyswietlenie komunikatu po wczytaniu komorek
     if(errors > 0) {
         printf("\nLiczba bledow znalezionych w pliku: %d. Program konczy dzialanie.\n", errors);
+        exit(1);
+    }
+    if(num != grid->sizeX*grid->sizeY){
+        printf("Podano nieodpowiednia iloœæ komorek!");
         exit(1);
     }
     else
