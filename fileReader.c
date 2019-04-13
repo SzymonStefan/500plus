@@ -55,7 +55,7 @@ grid_t* createGrid(char* path)
         exit(1);
     }
     if(num != grid->sizeX*grid->sizeY){
-        printf("Podano nieodpowiednia iloœæ komorek!");
+        printf("Podano nieodpowiednia liczbe komorek!");
         exit(1);
     }
     else

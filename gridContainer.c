@@ -24,16 +24,3 @@ void printNeighbours(grid_t* grid, stats_t* stats) {
     printf("\n");
 }
 
-// Zwalnia pamiec po strukturze grid_t
-/*void freeGrid(grid_t* grid) {
-    for(int i = 0; i < grid->sizeX; i++)
-        free(grid->tmp[i]);
-    free(grid->tmp);
-
-    for(int i = 0; i < grid->sizeX; i++)
-        free(grid->grid[i]);
-    free(grid->grid);
-
-    free(grid);
-}*/
-

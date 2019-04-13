@@ -124,7 +124,6 @@ int main(int argc , char** argv) {
         freeStats(stats);
     }
 
-    //freeGrid(grid);
     // Zwolnienie pamieci
     freeOptions(options);
     return 0;
