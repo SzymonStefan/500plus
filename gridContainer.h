@@ -10,6 +10,4 @@ typedef struct {
 
 void printGrid(grid_t*);
 
-void freeGrid(grid_t*);
-
 #endif // GRIDCONTAINER_H_INCLUDED

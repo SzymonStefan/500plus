@@ -8,7 +8,6 @@
 #include "fileMaker.h"
 #include "lodepng.h"
 
-
 int main(int argc , char** argv) {
     // Stworzenie struktury przechowujacej opcje programu
     options_t* options = createOptions();
@@ -124,7 +123,6 @@ int main(int argc , char** argv) {
         freeStats(stats);
     }
 
-    // Zwolnienie pamieci
     freeOptions(options);
     return 0;
 }
